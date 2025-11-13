@@ -3,8 +3,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Minimalist Next.js Template",
-  description: "A production-ready, minimalist Next.js template with TypeScript and essential security features",
+  title: "Anagrams",
+  description: "Anagrams",
 };
 
 export default function RootLayout({
