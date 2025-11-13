@@ -4,7 +4,7 @@ const isPublicRoute = createRouteMatcher([
   "/",
   "/sign-in(.*)",
   "/sign-up(.*)",
-  "/api/anagrams(.*)",    // ← allow this endpoint
+  "/api/anagrams(.*)",
 ]);
 
 export default clerkMiddleware(async (auth, req) => {
@@ -15,8 +15,7 @@ export default clerkMiddleware(async (auth, req) => {
 
 export const config = {
   matcher: [
-    // Don’t run on _next/static, assets, etc.
     "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
-    "/(api|trpc)(.*)", // still runs, but now anagrams is public
+    "/(api|trpc)(.*)", 
   ],
 };

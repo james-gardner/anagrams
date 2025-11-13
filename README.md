@@ -1,17 +1,4 @@
-# Minimalist Next.js Template
-
-A production-ready, minimalist Next.js template with TypeScript, Tailwind CSS, Clerk authentication, and essential security features.
-
-## Features
-
-- **Next.js 16** - Latest version with App Router
-- **TypeScript** - Strict mode enabled for type safety
-- **Tailwind CSS v4** - Utility-first CSS framework
-- **Clerk Authentication** - Email/password authentication with built-in UI components
-- **Security Headers** - Pre-configured security headers including CSP, HSTS, and more
-- **Error Handling** - Built-in error boundaries and 404 page
-- **ESLint** - Code quality and consistency
-- **Production Ready** - Optimized build configuration
+# Anagrams
 
 ## Getting Started
 
@@ -98,7 +85,7 @@ npm run lint
 │   ├── page.tsx            # Home page
 │   └── globals.css         # Global styles
 ├── public/                 # Static files
-├── middleware.ts           # Clerk authentication middleware
+├── proxy.ts           # Clerk authentication middleware
 ├── .env.example            # Environment variables template
 ├── next.config.ts          # Next.js configuration
 ├── tsconfig.json           # TypeScript configuration
@@ -119,7 +106,6 @@ This template uses [Clerk](https://clerk.com) for authentication with the follow
 
 - `/sign-in` - Sign in page
 - `/sign-up` - Sign up page  
-- `/dashboard` - Protected dashboard (requires authentication)
 
 ### Configuring Clerk
 
@@ -167,12 +153,7 @@ Public variables must be prefixed with `NEXT_PUBLIC_`.
 
 ## Deployment
 
-This template can be deployed to any platform that supports Next.js:
-
-- [Vercel](https://vercel.com) (recommended)
 - [Netlify](https://netlify.com)
-- [Railway](https://railway.app)
-- Self-hosted with Node.js
 
 ## License
 
